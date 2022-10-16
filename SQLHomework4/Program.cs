@@ -7,6 +7,7 @@ public class Program
         using (ApplicationContext db = new ApplicationContext())
         {
             Employees employee1 = new Employees { Name = "Matt", Position = "Guard" };
+            //it would be better to give name Employee to single entity class to avoid misunderstanding between single Employees item and multiple Employees items
             Employees employee2 = new Employees { Name = "Anthony", Position = "Manager" };
             Employees employee3 = new Employees { Name = "Kate", Position = "CEO" };
 
@@ -66,3 +67,4 @@ public class Program
         Console.Read();
     }
 }
+//checked
